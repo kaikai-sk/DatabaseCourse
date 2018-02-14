@@ -1,0 +1,570 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EmailManagement.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EmailManagement.ico"
+IDI_ICON_EMAIL          ICON    DISCARDABLE     "res\\icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 EmailManagement"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDI_ICON_EMAIL,IDC_STATIC,11,17,20,20
+    LTEXT           "EmailManagement 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_EMAILMANAGEMENT_DIALOG DIALOGEX 0, 0, 594, 406
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EmailManagement"
+MENU IDR_MENU_YOUJIAN
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "联系人信息管理",IDC_STATIC,154,22,201,115
+    CONTROL         "List1",IDC_LIST_CONTACT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,164,33,181,79
+    PUSHBUTTON      "添加",IDC_BTN_ADDCON,157,119,46,14
+    PUSHBUTTON      "修改",IDC_BTN_MODCON,206,119,46,14
+    PUSHBUTTON      "彻底删除",IDC_BTN_DELCON,253,118,48,14
+    GROUPBOX        "邮件类型管理",IDC_STATIC,447,281,140,114
+    CONTROL         "List2",IDC_LIST_ETYPE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,449,292,136,81
+    PUSHBUTTON      "添加",IDC_BTN_ADDTYPE,460,378,41,14
+    PUSHBUTTON      "修改",IDC_BTN_MODTYPE,506,378,38,14
+    PUSHBUTTON      "删除",IDC_BTN_DELTYPE,547,378,36,14
+    GROUPBOX        "邮件记录管理",IDC_STATIC,7,148,437,134
+    CONTROL         "List3",IDC_LIST_RECORD,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,63,158,323,119
+    PUSHBUTTON      "发送邮件",IDC_BTN_SENDRED,10,160,50,14
+    PUSHBUTTON      "查询记录",IDC_BTN_QUERYRED,10,180,50,14
+    PUSHBUTTON      "彻底删除记录",IDC_BTNDELRED,10,200,50,14
+    PUSHBUTTON      "按时间段查询",IDC_BUTTON_TIMEQUERY,10,220,50,14
+    GROUPBOX        "联系人分组管理",IDC_STATIC,7,22,132,117
+    CONTROL         "List1",IDC_LIST_GROUP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,11,33,119,81
+    PUSHBUTTON      "添加",IDC_BTN_GROUP_ADD,14,118,34,14
+    PUSHBUTTON      "查看",IDC_BTN_GROUP_QUERY,53,118,34,14
+    PUSHBUTTON      "删除",IDC_BTN_GROUP_DEL,92,118,34,14
+    PUSHBUTTON      "查看已读邮件",IDC_BTN_READED,10,240,50,14
+    PUSHBUTTON      "查看未读邮件",IDC_BTN_NOTREAD,10,260,50,14
+    GROUPBOX        "附件管理",IDC_STATIC,446,152,141,117
+    CONTROL         "List1",IDC_LIST_FUJIAN,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,453,162,130,103
+    PUSHBUTTON      "移到回收站",IDC_BTN_MOVETO_BIN,392,246,50,14
+    GROUPBOX        "回收站",IDC_STATIC,7,284,438,115
+    CONTROL         "List1",IDC_LIST_RECYCLE_BIN,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,69,293,372,101
+    PUSHBUTTON      "还原",IDC_BTN_RESTORE,13,316,50,14
+    GROUPBOX        "黑名单",IDC_STATIC,358,22,183,115
+    CONTROL         "List1",IDC_LIST_BLACK,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,366,33,171,81
+    PUSHBUTTON      "拉黑",IDC_BTN_MOVETO_BLACK_LIST,302,118,44,14
+    PUSHBUTTON      "还原",IDC_BTN_RETURNTO_CONTACT,430,118,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,142,580,1
+    PUSHBUTTON      "收件箱",IDC_BTN_RECEIVE_BIN,392,204,50,14
+    PUSHBUTTON      "发件箱",IDC_BTN_SEND_BIN,392,225,50,14
+    LTEXT           "",IDC_STATIC_TISHI,372,8,207,12
+    LTEXT           "欢迎来到此邮件管理系统",IDC_STATIC,231,9,96,8
+    PUSHBUTTON      "草稿箱",IDC_BTN_DRAFT,392,162,50,14
+    PUSHBUTTON      "模糊查询",IDC_BTN_BLUR_FIND,392,183,50,14
+END
+
+IDD_DIALOG_CONTACT DIALOG DISCARDABLE  0, 0, 235, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "邮件联系人"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,34,71,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,71,50,14
+    LTEXT           "联系人姓名：",IDC_STATIC,21,22,49,8
+    LTEXT           "联系人Email：",IDC_STATIC,21,38,52,8
+    EDITTEXT        IDC_EDIT_CNAME,74,20,82,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CEMAIL,74,36,82,14,ES_AUTOHSCROLL
+    LTEXT           "为联系人分组：",IDC_STATIC,8,56,61,8
+    COMBOBOX        IDC_COMBO_ALLGROUP,73,53,83,99,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC_HEADPIC,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE,171,26,57,61
+    LTEXT           "点此图片上传头像",IDC_STATIC,164,14,64,8
+END
+
+IDD_DIALOG_TYPE DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "邮件类型"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,31,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,50,50,14
+    LTEXT           "邮件类型名称：",IDC_STATIC,23,34,57,8
+    EDITTEXT        IDC_EDIT_ETYPE,23,46,98,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_RECORD DIALOG DISCARDABLE  0, 0, 272, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "邮件记录"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,207,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,207,50,14
+    LTEXT           "联系人：",IDC_STATIC,11,9,32,8
+    LTEXT           "邮件类型：",IDC_STATIC,24,38,41,8
+    LTEXT           "发送日期：",IDC_STATIC,24,54,41,8
+    LTEXT           "邮件内容：",IDC_STATIC,23,137,41,8
+    COMBOBOX        IDC_COMBO_CONTACT,40,7,81,92,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TYPE,71,35,48,91,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,70,51,100,15
+    EDITTEXT        IDC_EDIT_EINFO,24,149,230,42,ES_AUTOHSCROLL
+    CONTROL         "添加附件            ",IDC_CHECK_FUJIAN,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,15,75,41,10
+    EDITTEXT        IDC_EDIT_FILE_NAME,58,75,105,14,ES_AUTOHSCROLL
+    GROUPBOX        "附件相关内容",IDC_STATIC,13,66,193,56
+    EDITTEXT        IDC_EDIT_FILE_DESC,26,93,176,26,ES_AUTOHSCROLL
+    CONTROL         "标记为已读",IDC_CHECK_ISREAD,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,23,124,91,10
+    COMBOBOX        IDC_COMBO_GROUP,200,7,48,54,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "联系人所属的分组：",IDC_STATIC,122,9,73,8
+    CONTROL         "",IDC_FUJIAN_PIC,"Static",SS_BITMAP | SS_CENTERIMAGE,
+                    210,71,57,49
+    CONTROL         "邮件群发",IDC_CHECK_ISQUNFA,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,23,23,48,10
+    EDITTEXT        IDC_EDIT_RECIEVER_SEQ,83,21,174,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "上传",IDC_BTN_UPLOAD,166,75,37,14
+    CONTROL         "存为草稿",IDC_CHECK_DRAFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,196,112,10
+END
+
+IDD_DIALOG_TIMEQUERY DIALOG DISCARDABLE  0, 0, 218, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "按时间段查询对话框"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,161,23,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,161,46,50,14
+    LTEXT           "时间起点：",IDC_STATIC,13,26,41,14
+    LTEXT           "时间终点：",IDC_STATIC,13,48,41,14
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_START,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,55,23,
+                    100,14
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_END,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,54,45,
+                    101,14
+END
+
+IDD_DIALOG_GROUP DIALOG DISCARDABLE  0, 0, 208, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "联系人分组管理"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,25,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,151,47,50,14
+    LTEXT           "组名：",IDC_STATIC,28,17,25,8
+    EDITTEXT        IDC_EDIT_GROUUP_NAME,56,16,87,12,ES_AUTOHSCROLL
+    LTEXT           "组备注：",IDC_STATIC,20,42,33,8
+    EDITTEXT        IDC_EDIT_GROUP_DESC,56,41,88,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_GROUP_MEMBER,56,60,88,82,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "组内成员：",IDC_STATIC_MEM,10,62,43,8
+END
+
+IDD_DIALOG_DB DIALOG DISCARDABLE  0, 0, 208, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据库连接信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定更改",IDOK,144,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,53,50,14
+    LTEXT           "数据源名：",IDC_STATIC,14,18,41,8
+    EDITTEXT        IDC_EDIT_DB_SRC,60,15,68,14,ES_AUTOHSCROLL
+    LTEXT           "用户名：",IDC_STATIC,14,43,33,8
+    EDITTEXT        IDC_EDIT_USER,60,40,69,14,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,14,67,25,8
+    EDITTEXT        IDC_EDIT_PASSWORD,60,67,69,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_USER_REGIST DIALOG DISCARDABLE  0, 0, 182, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册用户对话框"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,66,80,50,14
+    PUSHBUTTON      "取消",IDCANCEL,119,80,50,14
+    LTEXT           "用户",IDC_STATIC,14,19,17,8
+    LTEXT           "密码：",IDC_STATIC,14,37,25,8
+    LTEXT           "确认密码:",IDC_STATIC,14,62,35,8
+    EDITTEXT        IDC_EDIT_USER_NAME,53,18,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,52,37,112,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OK_PASSWORD,51,60,113,14,ES_AUTOHSCROLL
+    LTEXT           "@sk.mail.com",IDC_STATIC,117,20,47,8
+END
+
+IDD_DIALOG_USER_LOGON DIALOG DISCARDABLE  0, 0, 179, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录对话框"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "登录/切换",IDOK,52,81,50,14
+    PUSHBUTTON      "取消",IDCANCEL,114,81,50,14
+    LTEXT           "用户名:",IDC_STATIC,15,21,27,8
+    EDITTEXT        IDC_EDIT_USER_NAME,50,20,58,14,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,15,53,25,8
+    EDITTEXT        IDC_EDIT_USER_PASSWD,49,50,111,14,ES_AUTOHSCROLL
+    LTEXT           "@sk.mail.com",IDC_STATIC,111,22,47,8
+END
+
+IDD_DIALOG_ALL_USER DIALOG DISCARDABLE  0, 0, 190, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "此应用程序所有的用户"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST_ALL_USERS,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,11,13,171,96
+END
+
+IDD_DIALOG_BLUR_FIND DIALOG DISCARDABLE  0, 0, 208, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "邮件记录模糊查询对话框"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,151,55,50,14
+    CONTROL         "按姓名查询",IDC_RADIO_BLUR_NAME,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,48,17,56,10
+    CONTROL         "按邮箱地址查询",IDC_RADIO_BLUR_EMAIL,"Button",
+                    BS_AUTORADIOBUTTON,48,51,72,10
+    EDITTEXT        IDC_EDIT_KEY_NAME,69,30,76,14,ES_AUTOHSCROLL
+    LTEXT           "姓名关键字",IDC_STATIC1,17,33,41,8
+    LTEXT           "邮箱关键字",IDC_STATIC2,17,68,41,8
+    EDITTEXT        IDC_EDIT_KEY_EMAIL,68,64,77,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_DRAFT DIALOG DISCARDABLE  0, 0, 291, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "草稿箱"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST_DRAFT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,277,113
+END
+
+IDD_DIALOG_NET_SEND DIALOG DISCARDABLE  0, 0, 212, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "我的邮件发送"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,155,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,58,50,14
+    LTEXT           "收件人：",IDC_STATIC,20,19,33,8
+    EDITTEXT        IDC_EDIT_ADDRESS,63,16,85,14,ES_AUTOHSCROLL
+    LTEXT           "邮件内容：",IDC_STATIC,20,38,41,8
+    EDITTEXT        IDC_EDIT_MYEMAIL_INFO,19,48,132,47,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EmailManagement Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "EmailManagement\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EmailManagement.EXE\0"
+            VALUE "ProductName", "EmailManagement 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_EMAILMANAGEMENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 587
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 399
+    END
+
+    IDD_DIALOG_CONTACT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DIALOG_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_DIALOG_TIMEQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_DIALOG_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG_DB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_USER_REGIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_DIALOG_USER_LOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DIALOG_ALL_USER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG_BLUR_FIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_DRAFT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_DIALOG_NET_SEND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_YOUJIAN MENU DISCARDABLE 
+BEGIN
+    MENUITEM "数据库",                      IDM_DB
+    POPUP "皮肤"
+    BEGIN
+        MENUITEM "更换皮肤",                    IDM_CHANGE_MY_SKIN
+        MENUITEM "移去皮肤",                    IDM_REMOVE_SKIN
+    END
+    POPUP "用户管理"
+    BEGIN
+        MENUITEM "注册",                        IDM_USER_REGIST
+        MENUITEM "登录/切换",                   IDM_LOG_ON
+        MENUITEM "查看所有用户",                IDM_ALL_USERS
+        MENUITEM "注销",                        IDM_USER_CANCELLATION
+    END
+    POPUP "网络"
+    BEGIN
+        MENUITEM "发邮件",                      IDM_NET_SEND_MAIL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 EmailManagement(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\EmailManagement.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

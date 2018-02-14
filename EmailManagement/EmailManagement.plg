@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: EmailManagement - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/EmailManagement.res" /d "_DEBUG" "C:\Users\dell\Desktop\EmailManagement\EmailManagement.rc"" 
+Creating temporary file "C:\Users\dell\AppData\Local\Temp\RSP8834.tmp" with contents
+[
+SkinPPWTL.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/EmailManagement.pdb" /debug /machine:I386 /out:"Debug/EmailManagement.exe" /pdbtype:sept 
+.\Debug\AllUsersDlg.obj
+.\Debug\BlurFindDlg.obj
+.\Debug\ContactManagement.obj
+.\Debug\DBConnDlg.obj
+.\Debug\EmailContactGroupDlg.obj
+.\Debug\EmailDraftDlg.obj
+.\Debug\EmailManagement.obj
+.\Debug\EmailManagementDlg.obj
+.\Debug\EmailRecordDlg.obj
+.\Debug\EmailTypeDlg.obj
+.\Debug\MyEmailSendDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\TimeQueryDlg.obj
+.\Debug\UserLogon.obj
+.\Debug\UserRegistDlg.obj
+.\Debug\EmailManagement.res
+]
+Creating command line "link.exe @C:\Users\dell\AppData\Local\Temp\RSP8834.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+EmailManagement.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
